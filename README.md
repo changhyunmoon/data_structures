@@ -1,10 +1,10 @@
 # DATA_STRUCTURES
 ## SORT
-종류 : selection sort, bubble sort(파생형 cocktail sort), quick sort, insertion sort, shell sort, merge sort, heap sort, radix sort, tree sort, tim sort, block merge sort, intro sort, countion sort, bogo sort, stupid sort, sleep sort, gravity sort
+종류 : selection sort, bubble sort(파생형 cocktail shaker sort), quick sort, insertion sort, shell sort, merge sort, heap sort, radix sort, tree sort, tim sort, block merge sort, intro sort, countion sort, bogo sort, stupid sort, sleep sort, gravity sort
 
 ### selection sort(선택 정렬)
 제자리 정렬 알고리즘의 하나
-  입력 배열 이외에 다른 추가 메모리를 요구하지 않는 정렬 방법이다.
+입력 배열 이외에 다른 추가 메모리를 요구하지 않는 정렬 방법이다.
 
 과정
 1. 주어진 배열 중에서 최솟값을 찾는다.
@@ -12,3 +12,21 @@
 3. 맨 처음 위치를 뺀 나머지 리스트를 같은 방법으로 교체한다.
 4. 하나의 원소만 남을 때까지 위의 1~3 과정을 반복한다.
   
+
+### bubble sort(선택 정렬)
+서로 인접한 두 원소를 검사하여 정렬하는 알고리즘
+
+과정
+1. 첫 번째 자료와 두 번째 자료를, 두 번째 자료와 세 번째 자료를, 세 번째와 네 번째를, … 이런 식으로 (마지막-1)번째 자료와 마지막 자료를 비교하여 교환하면서 자료를 정렬한다.
+2. 1회전을 수행하고 나면 가장 큰 자료가 맨 뒤로 이동하므로 2회전에서는 맨 끝에 있는 자료는 정렬에서 제외되고, 2회전을 수행하고 나면 끝에서 두 번째 자료까지는 정렬에서 제외된다. 이렇게 정렬을 1회전 수행할 때마다 정렬에서 제외되는 데이터가 하나씩 늘어난다.
+
+### cocktail shaker sort(캌테일 셰이커 정렬)
+칵테일 정렬(cocktail sort), 셰이커 정렬(shaker sort), 양방향 버블 정렬(bidirectional bubble sort) 또는 양방향 거품 정렬
+
+과정
+1. 좌측 지점부터 우측 지점으로 비교 작업을 진행합니다. 교환할 자료가 있으면 교환하면서 우측 지점까지 진행합니다.
+2. 마지막에 교환이 이루어진 곳을 우측 지점으로 설정합니다.
+3. 이번에는 반대로 우측 지점부터 좌측 지점으로 비교 작업을 진행합니다. 교환할 자료가 있으면 교환 합니다.
+4. 마지막에 교환이 이루어진 곳을 좌측 지점으로 지정합니다.
+5. 좌측 지점과 우측 지점이 교차하지 않았다면 아직 정렬할 자료가 남아있으니 앞의 작업을 계속 반복합니다. 비교/교환 작업이 진행되면서 정렬 범위가 조금씩 좁아지게 되며 결국은 더이상 비교할 것이 없는 정렬 완료 상태가 됩니다.
+
